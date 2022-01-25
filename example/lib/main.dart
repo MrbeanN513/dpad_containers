@@ -78,8 +78,9 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       backgroundColor: isbool2
           ? isbool
-              ? Colors.red
-              : Colors.green
+              // ? Colors.red
+              ?Colors.greenAccent
+              : Colors.white
           : Colors.yellow,
       appBar: AppBar(
         title: Text(widget.title),
@@ -133,7 +134,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ontap: () => _incrementCounter(),
                   onKey_numberpad_add: _increment,
                   onKey_numberpad_subtract: _decrement,
-                  onPressedEnterOKAction: changeRedgreen,
+                  onPressedEnterOKAction: _increment,
                   onPressedSpacebarAction: changeRedgreen,
 
                   focusedchild: const Center(child: Icon(Icons.add)),
@@ -157,7 +158,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ontap: () => _decrementCounter(),
                   onKey_numberpad_add: _increment,
                   onKey_numberpad_subtract: _decrement,
-                  onPressedEnterOKAction: changeRedgreen,
+                  onPressedEnterOKAction:_decrement,
                   onPressedSpacebarAction: changeRedyellow,
                   focusedchild: const Center(child: Icon(Icons.remove)),
                   nonfocusedchild: const Center(child: Icon(Icons.remove)),
