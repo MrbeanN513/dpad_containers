@@ -6,11 +6,10 @@ Dpad_container very usefull for dpad/keyboard navigation for web/andrid tv/windo
 
 -import 'package:dpad_containers/dpad_containers.dart'; 
 
-Example
-![] (https://github.com/MrbeanN513/dpad_containers/blob/master/example/dpad_container.gif)
+![](https://github.com/MrbeanN513/dpad_containers/blob/master/example/dpad_container.gif)
 
 '''
-*  DpadContainerButton(
+DpadContainerButton(
                   autoFocus: true,
                   height: 50,
                   width: 50,
@@ -20,7 +19,6 @@ Example
                   onPressedSpacebarAction: changeRedgreen,
                   //use like normal container
                   child: const Center(child: Icon(Icons.light)),
-
                   //or use focus and nonfocus
                   focusedBackgroundDecoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(25.0),
@@ -32,3 +30,7 @@ Example
                   // nonfocusedBackgroundColor: Colors.grey,
                 ),
                 '''
+
+                
+Thanks,
+Goutam halder
