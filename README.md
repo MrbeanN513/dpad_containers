@@ -1,39 +1,34 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+Dpad_container very usefull for dpad/keyboard navigation for web/andrid tv/windows/mac/linux app
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages). 
+-it is a container/Animated container wrap with logical_key focus
+-all the fuctionality of container /animated container are available, 
+-Or change all parameter by focused / non focused
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages). 
--->
+-import 'package:dpad_containers/dpad_containers.dart'; 
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Example
+![] (https://github.com/MrbeanN513/dpad_containers/blob/master/example/dpad_container.gif)
 
-## Features
+'''
+*  DpadContainerButton(
+                  autoFocus: true,
+                  height: 50,
+                  width: 50,
+                  onKey_numberpad_add: _increment,
+                  onKey_numberpad_subtract: _decrement,
+                  onPressedEnterOKAction: changeRedgreen,
+                  onPressedSpacebarAction: changeRedgreen,
+                  //use like normal container
+                  child: const Center(child: Icon(Icons.light)),
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
-
-```dart
-const like = 'sample';
-```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+                  //or use focus and nonfocus
+                  focusedBackgroundDecoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(25.0),
+                      color: Colors.blue),
+                  nonfocusedBackgroundDecoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(25.0),
+                      color: Colors.grey),
+                  // focusedBackgroundColor: Colors.blue,
+                  // nonfocusedBackgroundColor: Colors.grey,
+                ),
+                '''
