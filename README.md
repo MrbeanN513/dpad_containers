@@ -8,7 +8,7 @@ Dpad_container very usefull for dpad/keyboard navigation for web/andrid tv/windo
 
 ![](https://github.com/MrbeanN513/dpad_containers/blob/master/example/dpad_container.gif)
 
-'''
+```
 DpadContainerButton(
                   autoFocus: true,
                   height: 50,
@@ -29,8 +29,9 @@ DpadContainerButton(
                   // focusedBackgroundColor: Colors.blue,
                   // nonfocusedBackgroundColor: Colors.grey,
                 ),
-                '''
+              ```
 
                 
-Thanks,
+
+Thanks, 
 Goutam halder
